@@ -1,6 +1,6 @@
-resource "kubernetes_pod" "vector_add_1" {
+resource "kubernetes_pod" "vector_add_2" {
   metadata {
-    name      = "cuda-vector-add-1"
+    name      = "cuda-vector-add-2"
     namespace = "default" # Adjust this as necessary
   }
 

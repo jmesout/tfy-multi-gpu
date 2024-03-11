@@ -1,6 +1,6 @@
-resource "kubernetes_pod" "vector_add_1" {
+resource "kubernetes_pod" "vector_add_3" {
   metadata {
-    name      = "cuda-vector-add-1"
+    name      = "cuda-vector-add-3"
     namespace = "default" # Adjust this as necessary
   }
 
@@ -17,7 +17,7 @@ resource "kubernetes_pod" "vector_add_1" {
       }
       resources {
         limits = {
-          "nvidia.com/gpu" = 1
+          "nvidia.com/gpu" = 2
         }
       }
     }
